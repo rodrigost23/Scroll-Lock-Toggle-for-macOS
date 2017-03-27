@@ -10,6 +10,7 @@
 		5B331D3C1E8884DE00A9739D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B331D3B1E8884DE00A9739D /* AppDelegate.swift */; };
 		5B331D3E1E8884DE00A9739D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B331D3D1E8884DE00A9739D /* Assets.xcassets */; };
 		5B331D411E8884DE00A9739D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B331D3F1E8884DE00A9739D /* MainMenu.xib */; };
+		5B36C8631E88A41300D49A4D /* ledcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B36C8611E88A41300D49A4D /* ledcontrol.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,9 @@
 		5B331D3D1E8884DE00A9739D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B331D401E8884DE00A9739D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5B331D421E8884DE00A9739D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B36C8601E88A41200D49A4D /* kb LED Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kb LED Menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B36C8611E88A41300D49A4D /* ledcontrol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ledcontrol.c; sourceTree = "<group>"; };
+		5B36C8621E88A41300D49A4D /* ledcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ledcontrol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 				5B331D3D1E8884DE00A9739D /* Assets.xcassets */,
 				5B331D3F1E8884DE00A9739D /* MainMenu.xib */,
 				5B331D421E8884DE00A9739D /* Info.plist */,
+				5B36C8611E88A41300D49A4D /* ledcontrol.c */,
+				5B36C8621E88A41300D49A4D /* ledcontrol.h */,
+				5B36C8601E88A41200D49A4D /* kb LED Menu-Bridging-Header.h */,
 			);
 			path = "kb LED Menu";
 			sourceTree = "<group>";
@@ -91,6 +98,7 @@
 					5B331D371E8884DE00A9739D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T8UHR7346H;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B331D3C1E8884DE00A9739D /* AppDelegate.swift in Sources */,
+				5B36C8631E88A41300D49A4D /* ledcontrol.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +251,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T8UHR7346H;
 				INFOPLIST_FILE = "kb LED Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotavares.kb-LED-Menu";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigotavares.kbLEDMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kb LED Menu/kb LED Menu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -256,12 +270,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T8UHR7346H;
 				INFOPLIST_FILE = "kb LED Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotavares.kb-LED-Menu";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigotavares.kbLEDMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "kb LED Menu/kb LED Menu-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -285,6 +303,7 @@
 				5B331D471E8884DE00A9739D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
