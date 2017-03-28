@@ -42,11 +42,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func setButtonAppearance(button: NSStatusBarButton, closeMode: Bool) {
         if !closeMode {
-            button.image = NSImage(named: (serviceProvider.ledsOn) ? "StatusBarButtonImageOn" : "StatusBarButtonImageOff")
+            button.image = NSImage(named: (serviceProvider.ledsOn) ? "statusIconToggleOn" : "statusIconToggleOff")
             button.toolTip = "Toggle Scroll Lock"
             button.action = #selector(statusButtonClick);
         } else {
-            button.image = NSImage(named: "StatusBarButtonImageQuit")
+            button.image = NSImage(named: (serviceProvider.ledsOn) ? "statusIconQuitOn" : "statusIconQuitOff")
             button.toolTip = "Close app"
             button.action = #selector(self.exitApp);
         }

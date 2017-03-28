@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:kb LED Menu.xcodeproj">
+      location = "self:/Users/rodrigo/Projetos/kb LED Menu/Scroll Lock Toggle.xcodeproj">
    </FileRef>
 </Workspace>

@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5B331D3C1E8884DE00A9739D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B331D3B1E8884DE00A9739D /* AppDelegate.swift */; };
-		5B331D3E1E8884DE00A9739D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B331D3D1E8884DE00A9739D /* Assets.xcassets */; };
 		5B331D411E8884DE00A9739D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B331D3F1E8884DE00A9739D /* MainMenu.xib */; };
 		5B36C8631E88A41300D49A4D /* ledcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B36C8611E88A41300D49A4D /* ledcontrol.c */; };
+		5B9645B31E8AA7F9008D98F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9645B21E8AA7F9008D98F1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B331D381E8884DE00A9739D /* kb LED Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kb LED Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B331D381E8884DE00A9739D /* Scroll Lock Toggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scroll Lock Toggle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B331D3B1E8884DE00A9739D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B331D3D1E8884DE00A9739D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B331D401E8884DE00A9739D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5B331D421E8884DE00A9739D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B36C8601E88A41200D49A4D /* kb LED Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kb LED Menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B36C8601E88A41200D49A4D /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		5B36C8611E88A41300D49A4D /* ledcontrol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ledcontrol.c; sourceTree = "<group>"; };
 		5B36C8621E88A41300D49A4D /* ledcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ledcontrol.h; sourceTree = "<group>"; };
+		5B9645B21E8AA7F9008D98F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		5B331D2F1E8884DE00A9739D = {
 			isa = PBXGroup;
 			children = (
-				5B331D3A1E8884DE00A9739D /* kb LED Menu */,
+				5B331D3A1E8884DE00A9739D /* Scroll Lock Toggle */,
 				5B331D391E8884DE00A9739D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,31 +46,31 @@
 		5B331D391E8884DE00A9739D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B331D381E8884DE00A9739D /* kb LED Menu.app */,
+				5B331D381E8884DE00A9739D /* Scroll Lock Toggle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B331D3A1E8884DE00A9739D /* kb LED Menu */ = {
+		5B331D3A1E8884DE00A9739D /* Scroll Lock Toggle */ = {
 			isa = PBXGroup;
 			children = (
+				5B9645B21E8AA7F9008D98F1 /* Assets.xcassets */,
 				5B331D3B1E8884DE00A9739D /* AppDelegate.swift */,
-				5B331D3D1E8884DE00A9739D /* Assets.xcassets */,
 				5B331D3F1E8884DE00A9739D /* MainMenu.xib */,
 				5B331D421E8884DE00A9739D /* Info.plist */,
 				5B36C8611E88A41300D49A4D /* ledcontrol.c */,
 				5B36C8621E88A41300D49A4D /* ledcontrol.h */,
-				5B36C8601E88A41200D49A4D /* kb LED Menu-Bridging-Header.h */,
+				5B36C8601E88A41200D49A4D /* Bridging-Header.h */,
 			);
-			path = "kb LED Menu";
+			path = "Scroll Lock Toggle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B331D371E8884DE00A9739D /* kb LED Menu */ = {
+		5B331D371E8884DE00A9739D /* Scroll Lock Toggle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B331D451E8884DE00A9739D /* Build configuration list for PBXNativeTarget "kb LED Menu" */;
+			buildConfigurationList = 5B331D451E8884DE00A9739D /* Build configuration list for PBXNativeTarget "Scroll Lock Toggle" */;
 			buildPhases = (
 				5B331D341E8884DE00A9739D /* Sources */,
 				5B331D351E8884DE00A9739D /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "kb LED Menu";
+			name = "Scroll Lock Toggle";
 			productName = "kb LED Menu";
-			productReference = 5B331D381E8884DE00A9739D /* kb LED Menu.app */;
+			productReference = 5B331D381E8884DE00A9739D /* Scroll Lock Toggle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B331D331E8884DE00A9739D /* Build configuration list for PBXProject "kb LED Menu" */;
+			buildConfigurationList = 5B331D331E8884DE00A9739D /* Build configuration list for PBXProject "Scroll Lock Toggle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B331D371E8884DE00A9739D /* kb LED Menu */,
+				5B331D371E8884DE00A9739D /* Scroll Lock Toggle */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B331D3E1E8884DE00A9739D /* Assets.xcassets in Resources */,
+				5B9645B31E8AA7F9008D98F1 /* Assets.xcassets in Resources */,
 				5B331D411E8884DE00A9739D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,12 +255,12 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T8UHR7346H;
-				INFOPLIST_FILE = "kb LED Menu/Info.plist";
+				INFOPLIST_FILE = "Scroll Lock Toggle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigotavares.kbLEDMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotavares.scrlk-toggle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "kb LED Menu/kb LED Menu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scroll Lock Toggle/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,12 +274,12 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T8UHR7346H;
-				INFOPLIST_FILE = "kb LED Menu/Info.plist";
+				INFOPLIST_FILE = "Scroll Lock Toggle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigotavares.kbLEDMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigotavares.scrlk-toggle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "kb LED Menu/kb LED Menu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Scroll Lock Toggle/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -287,7 +287,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B331D331E8884DE00A9739D /* Build configuration list for PBXProject "kb LED Menu" */ = {
+		5B331D331E8884DE00A9739D /* Build configuration list for PBXProject "Scroll Lock Toggle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B331D431E8884DE00A9739D /* Debug */,
@@ -296,7 +296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B331D451E8884DE00A9739D /* Build configuration list for PBXNativeTarget "kb LED Menu" */ = {
+		5B331D451E8884DE00A9739D /* Build configuration list for PBXNativeTarget "Scroll Lock Toggle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B331D461E8884DE00A9739D /* Debug */,
